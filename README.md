@@ -1,69 +1,62 @@
-# Patient Front-End
+# MedChain: Decentralized Electronic Health Record (EHR) Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Introduction 
 
-## Available Scripts
+This project aims to develop a secure and patient-centric decentralised Electronic Health Record (EHR) platform using Base blockchain and Filecoin's IPFS technologies
 
-In the project directory, you can run:
 
-### `npm start`
+### Objective:
+- A secure EHR platform where medical data is encrypted
+- Access to medical data by healthcare providers is controlled by patients
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Key Features:
+- Data encryption and decentralised storage: Securely store encrypted patient data on IPFS, accessible and decryptable only by authorized healthcare providers.
+- Blockchain Integration: Base (ethereum layer-2) blockchain store references (hashes) to the data on IPFS, providing an immutable ledger of all transactions and interactions.
+- Patient & Healthcare Provider Portals: view patient's medical information and add new medical records.
+- Smart Contract Functionality: managing patient-controlled medical records access and updates.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Technical Stack:
+- Frontend: React.js is used to build interactive user interfaces for both patients and healthcare providers.
+- Blockchain: Base (ethereum layer-2) blockchain serves as the backbone, providing a secure platform for contract deployment and interaction.
+- Solidity Smart Contracts: manage patient profiles and associated medical records.
+- Ethers.js: library employed to interact with the Ethereum blockchain, enabling the frontend to communicate with smart contracts and perform blockchain transactions.
+- IPFS: utilised for off-chain encrypted medical data storage 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## MedChain React Application for Patients [Working Build]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This repository contains the React frontend for MedChain, allowing patient users to interact with the smart contract seamlessly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Features
+Current version:
+- Register new patient profile
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Future version:
+- Smart contract interaction 
+- Account login 
+- EHR dashboard for patients
+- Grant permission of data access to healthcare providers
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Setup and Installation
+1. Clone the repository:
+    ```bash
+   git clone https://github.com/timch8/Patient_Portal.git 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Navigate to the project directory:
+    ```bash
+    cd Patient_Portal 
+3. Install dependencies:
+    ```bash
+    npm install 
+4. Start the development server:
+    ```bash
+    npm start
 
 ### `npm run build` fails to minify
 
